@@ -1,0 +1,30 @@
+runtime: php73
+
+runtime_config:
+  document_root:
+
+handlers:
+# Serve a directory as a static resource.
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: javascript
+# Serve images as static resources.
+- url: /(.+\.(gif|png|jpg|jpeg|PNG))$
+  static_files: \1
+  upload: .+\.(gif|png|jpg|jpeg|css|js|map|PNG)$
+
+- url: /.*
+  script: auto
+
+entrypoint:
+  serve handler.php
+
+env_variables:
+
+  CLOUDSQL_USER: root
+  CLOUDSQL_DB: booktest
+  CLOUDSQL_PASSWORD: booktest
+  CLOUDSQL_DSN: /cloudsql/booktest-316111:us-central1:booktest
+

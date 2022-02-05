@@ -1,0 +1,279 @@
+:root {
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+body{
+  padding: 0 10px;
+}
+
+
+
+.dash-title {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.main-content {
+
+    position: relative;
+    margin-left: 50px;
+    transition: margin-left 500ms;
+}
+
+main {
+    margin-top: 60px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: 1rem 3rem;
+}
+
+.recent {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 1.5rem;
+}
+
+.activity-card
+ {
+    background: #fff;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.activity-card table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.activity-card thead {
+    background: #efefef;
+    text-align: center;
+}
+/*
+th
+{
+  background-color: #FFE6E6;
+  color:#000;
+}
+
+th, td {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    color: var(--color-dark);
+     padding:12px 15px;
+  border:2px solid  #AB1E7C;
+}
+
+td {
+    font-size: 1rem;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+
+.filter{
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+
+
+
+
+opacity: .7;
+}
+table{
+ position: absolute;
+
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+ width: 60%; 
+ border-collapse: collapse;
+ border-spacing: 0;
+ box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ border-radius: 12px 12px 0 0;
+ overflow: hidden;
+
+}
+td , th{
+ padding: 15px 20px;
+ text-align: center;
+ 
+
+}
+th{
+ background-color: #ba68c8;
+ color: #fafafa;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+
+}
+tr{
+ width: 100%;
+ background-color: #fafafa;
+ font-family: 'Montserrat', sans-serif;
+}
+tr:nth-child(even){
+ background-color: #eeeeee;
+}
+*/
+
+
+.edit
+{
+    background-color: #4CAF50;
+      border: none;
+  color: white;
+  padding: 12px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.delete
+{
+    background-color:#f44336;
+      border: none;
+  color: white;
+  padding: 12px 4px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.edit,.delete:active { 
+  transform: translateY(2px);
+}
+/*.table-responsive {
+    overflow-x: auto;
+}*/
+
+
+/* search bar start */
+
+.search
+{
+  width: 50%;
+  border: 2px solid #CF5C3F;
+  overflow: auto;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.search input[type="text"]
+{
+  border: 0px;
+  width: 70%;
+  padding: 10px 10px;
+}
+
+.search input[type="text"]:focus
+{
+  outline: 0;
+}
+
+.search input[type="submit"]
+{
+  border: 0px;
+  background: none;
+  background-color: #CF5C3F;
+  color: #000;
+  float: right;
+  padding: 10px;
+  border-radius-top-right: 5px;
+ 
+  border-radius-bottom-right: 5px;
+ 
+        cursor:pointer;
+}
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+  
+  .search
+  {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .search input[type="text"]
+  {
+    width: 80%;
+
+  }
+  .search input[type="submit"]
+  {
+    width: 20px;
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    .main-content {
+        margin-left: 60px;
+    }
+
+    .main-content header {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+  }
+
+@media only screen and (max-width: 860px) {
+  
+    .activity-grid {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dash-cards {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

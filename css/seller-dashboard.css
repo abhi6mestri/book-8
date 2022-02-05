@@ -1,0 +1,143 @@
+
+:root {
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+/* main body and header start */
+
+.main-content {
+    position: relative;
+    margin-left:5%;
+    transition: margin-left 500ms;
+    top: 50%;
+}
+
+
+
+main {
+    margin-top: 60px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: 1rem 3rem;
+}
+
+.dash-title {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.dash-cards {
+    display: grid;
+    grid-template-columns: 1000px auto auto auto;
+    grid-column-gap: 5rem;
+}
+
+.card-single {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(171, 30, 124, 1);
+    height: 50vh;
+}
+
+.card-body {
+    padding: 1.3rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1.4rem;
+
+}
+
+.card-body h5 {
+    color: var(--text-grey);
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+
+    padding-top: 30px;
+}
+
+.card-body h4 {
+    color: var(--color-dark);
+    font-size: 1rem;
+    margin-top: .2rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-footer {
+    padding: .2rem 1rem;
+    background: #f9fafc;
+    padding-top: 20px;
+    text-align: center;
+        align-items: center;
+    justify-content: center;
+}
+
+.card-footer a {
+    color: var(--main-color);
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .main-content {
+        margin-left: 60px;
+    }
+
+    .main-content header {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+    
+}
+
+@media only screen and (max-width: 860px) {
+    .dash-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .card-single {
+        margin-bottom: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .dash-cards {
+        grid-template-columns: 100%;
+    }
+    .card-single {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        padding-left: 0rem;
+        padding-right: 1rem;
+    }
+
+}
+
+/* main body and header end */

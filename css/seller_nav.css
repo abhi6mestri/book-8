@@ -1,0 +1,65 @@
+/* navbar  start */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 20px 8px 18px 60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  transform: scale(1.5); 
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 12px; overflow: hidden;}
+}
+
+/* navbar  end */
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    background: #fff;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+}   
+
+header p .username {
+    color: #AE2681;
+    font-weight: 700;
+    font-size: 1.5rem;  
+} 

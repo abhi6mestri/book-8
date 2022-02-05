@@ -1,0 +1,171 @@
+:root {
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body{
+ 
+  background: linear-gradient(to bottom , #008598 0%, #fff 100%);
+  padding: 0 10px;
+}
+
+/* add-product start */
+.flex-container .heading
+{
+  color: red;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.wrapper{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 5px 5px 5px 5px rgba(135, 128, 127, 1);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.wrapper .title{
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form{
+  width: 100%;
+}
+
+.wrapper .form .inputfield{
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputfield label{
+   width: 200px;
+   color: #000;
+   margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wrapper .form .inputfield .input
+{
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .input:hover
+{
+  border: 3px solid #008598;
+}
+
+.wrapper .form .inputfield:last-child{
+  margin-bottom: 0;
+}
+
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.shipping {
+  
+  padding: 10px;
+  flex: 50%;
+}
+
+.billing {
+  
+  padding: 10px;
+  flex: 50%;
+}
+.confirm-order
+{
+   margin: auto;
+  width: 60%;
+
+  padding: 10px;
+}
+.confirm-order .confirm-order-btn
+{
+    background-color: #008598;
+  border: none;
+  color: #fff;
+  padding: 15px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+.confirm-order-btn:hover
+{
+  transform: translateY(2px);
+}
+
+@media (max-width:420px) {
+  .wrapper .form .inputfield{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputfield label{
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputfield.terms{
+    flex-direction: row;
+  }
+  .confirm-order .confirm-order-btn
+  {
+    font-size: 16px;
+  }
+  .flex-container .heading
+{
+  color: red;
+  font-size: 23px;
+  font-weight: 900;
+}
+}
+
+@media (max-width: 800px) {
+  .billing, .shipping {
+    flex: 100%;
+  }
+   .confirm-order .confirm-order-btn
+  {
+    font-size: 16px;
+  }
+}
+.wrapper .form .inputfield .textarea
+{
+  height: 100px;
+}
+
+
+
+/* add-product end */

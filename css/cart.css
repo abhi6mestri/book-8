@@ -1,0 +1,189 @@
+.pname
+{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.seller_name
+{
+  font-size: 18px;
+  font-weight: 500;
+}
+.pimg
+{
+  width: 130px;
+  height: 200px;
+  border-radius: 10px;
+}
+.remove-product
+{
+  color: #ff0000;
+     padding: 10px 20px;
+  margin: 8px 0;
+  font-weight: 500;
+  font-size: 20px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    outline:none;
+    text-decoration: none;
+}
+.qty
+{
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.price
+{
+    text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+
+}
+.sub-total
+{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+.total-row
+{
+  border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
+}
+.total
+{
+ font-weight: 600;
+  font-size: 24px;
+}
+.heading,.row
+{
+    border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
+}
+.checkout
+{
+      border: none;
+    border-radius: 2px;
+    padding: 16px 30px 16px 30px;
+    background: #008598;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+.continue-shop
+{
+
+    border: none;
+    border-radius: 2px;
+    padding: 16px 30px 16px 30px;
+    background: #008598;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 15px;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+  .price
+  {
+    text-align: right;
+  }
+  .sub-total
+  {
+    text-align: right;
+  }
+  .checkout, .continue-shop
+  {
+    text-align: center;
+  }
+  .none
+  {
+    display: none;
+  }
+
+}}

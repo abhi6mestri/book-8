@@ -1,0 +1,193 @@
+:root {
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+
+body{
+  padding: 0 10px;
+}
+
+
+/* navbar  start */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .8);
+  overflow-x: hidden;
+  transition: 1s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 20px 8px 18px 60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  margin-top: 30px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  transform: scale(1.5); 
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 12px; overflow: hidden;}
+}
+
+/* navbar  end */
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40%;
+    background: #fff;
+    height: 60px;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+}   
+
+.dash-title {
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 7vh;
+}
+
+.main-content {
+
+    position: relative;
+    margin-left: 50px;
+    transition: margin-left 500ms;
+}
+
+main {
+    margin-top: 60px;
+    background: #f1f5f9;
+    min-height: 90vh;
+    padding: 1rem 3rem;
+}
+
+.recent {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 1.5rem;
+}
+
+.activity-card
+ {
+    background: #fff;
+    border-radius: 7px;
+    margin-right: 10px;
+}
+
+.activity-card table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+.activity-card thead {
+    background: #efefef;
+    text-align: center;
+}
+
+th
+{
+  background-color: #FFE6E6;
+  color:#000;
+}
+
+th, td {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    color: var(--color-dark);
+     padding:12px 15px;
+  border:2px solid  #AB1E7C;
+}
+
+td {
+    font-size: 1rem;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+
+
+
+/*.table-responsive {
+    overflow-x: auto;
+}*/
+
+@media only screen and (max-width: 1200px) {
+
+    .main-content {
+        margin-left: 60px;
+    }
+
+    .main-content header {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+  }
+
+@media only screen and (max-width: 860px) {
+  
+    .activity-grid {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .dash-cards {
+        grid-template-columns: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
